@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+html{
+  background-color: #282a37;
+/*   background-color: #2e2f38; */
+/*   background-color: #fff; */
+/*   height: 1000px; */
+}
+
+main{
+  width: 93%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+/* .container{
+  margin: auto;
+} */
+
+a{
+  text-decoration: none;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.navbar{
+  padding-top: 10px;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #282a37;
+  /* background: rgb(3,0,47);
+  background: linear-gradient(90deg, rgba(3,0,47,1) 0%, rgba(10,10,111,1) 70%, rgba(1,49,137,1) 100%); */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+}
+.navbar img{
+  height: 50px;
+  padding: 5px;
+}
+
+.icon{
+  height: 40px !important;
+  padding: 10px !important;
+  filter: invert(0.75);
+}
+
+.card{
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin: 30px;
+  padding: 15px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: #3f414c;
+  /* background: rgb(2,0,27);
+  background: linear-gradient(30deg, rgba(2,0,27,1) 0%, rgba(10,10,111,1) 53%, rgba(1,49,137,1) 100%); */
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+.card:hover{
+  width: 360px;
+  height: 210px;
+  margin: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+
+.card-add{
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin: 30px;
+  padding: 12px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: #3f414c;
+  /* background-color: #fff;
+  border: 3px solid #013189; */
+  text-align: center;
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+
+.card-add:hover{
+  width: 360px;
+  height: 210px;
+  margin: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+
+.card-add img{
+  height: 70%;
+  padding-top: 8%;
+  filter: invert(0.75);
+}
