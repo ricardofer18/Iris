@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "Agrosuper#",
+    "database": "agrosuper",
+    "host": "18.223.170.119",
+    "dialect": "mysql"
+  }
+}

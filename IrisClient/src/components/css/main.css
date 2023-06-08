@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Sans+Pro&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+html{
+  background-color: #282a37;
+/*   background-color: #2e2f38; */
+/*   background-color: #fff; */
+}
+
+main{
+  width: 93%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.navbar{
+  padding-top: 10px;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #282a37;
+  /* background: rgb(3,0,47);
+  background: linear-gradient(90deg, rgba(3,0,47,1) 0%, rgba(10,10,111,1) 70%, rgba(1,49,137,1) 100%); */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-align: center;
+  /* box-shadow: 0px 0px 20px rgba(0,0,0,0.5); */
+}
+.navbar img{
+  height: 50px;
+  padding: 5px;
+}
+
+.icon{
+  height: 40px !important;
+  padding: 10px !important;
+  filter: invert(0.75);
+}
+
+.card{
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin: 30px;
+  padding: 15px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: #3f414c;
+  /* background: rgb(2,0,27);
+  background: linear-gradient(30deg, rgba(2,0,27,1) 0%, rgba(10,10,111,1) 53%, rgba(1,49,137,1) 100%); */
+  /* transition: width 0.2s, height 0.2s,  box-shadow 0.2s; */
+}
+.card:hover{
+  width: 360px;
+  height: 210px;
+  margin: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  /* transition: width 0.2s, height 0.2s,  box-shadow 0.2s; */
+}
+
+.card h1{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.card p{
+  color: #000;
+  filter: invert(0.75);
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-add{
+  float: left;
+  width: 350px;
+  height: 200px;
+  margin: 30px;
+  padding: 12px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background-color: #3f414c;
+  /* background-color: #fff;
+  border: 3px solid #013189; */
+  text-align: center;
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+
+.card-add:hover{
+  width: 360px;
+  height: 210px;
+  margin: 25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  transition: width 0.2s, height 0.2s, margin 0.2s, box-shadow 0.2s;
+}
+
+.card-add img{
+  height: 70%;
+  padding-top: 8%;
+  filter: invert(0.75);
+  border: none;
+}
+
+dialog{
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  border: none;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  animation: opacity 0.5s;
+}
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.dialog-form{
+  background-color: #282a37;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  margin-top: 15%;
+}
+
+.dialog-form h1{
+  font-weight: bold;
+  margin: 20px;
+}
+
+.dialog-form p{
+  margin: 20px;
+}
+
+.dialog-form button{
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
+  background-color: #e97623;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dialog-form .cerrar{
+  width: 100%;
+  text-align: right;
+  filter: invert(1);
+  margin: -20px;
+  float: right;
+  padding: 0 !important;
+}
+
+.no-bg{
+  background-color: rgb(0,0,0,0.0) !important;
+  border: none !important;
+}
+
+form input{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+  outline: none;
+  color: #000;
+}
