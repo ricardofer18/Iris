@@ -1,16 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBTsDEt60eA2rGSMK4KeyS1VWArEFgZHrA",
-  authDomain: "waterdetector-c26ad.firebaseapp.com",
-  databaseURL: "https://waterdetector-c26ad-default-rtdb.firebaseio.com",
-  projectId: "waterdetector-c26ad",
-  storageBucket: "waterdetector-c26ad.appspot.com",
-  messagingSenderId: "887406191860",
-  appId: "1:887406191860:web:f1b07685ff9f336783aaa1",
-  measurementId: "G-T8KYJXEK15"
-}
+const firebaseConfig = { 
+  apiKey: "AIzaSyAK_g3Yk3PFAW92IvUYUnPWC8FFWbyDuJg", 
+  authDomain: "iris-arduino-v1.firebaseapp.com", 
+  databaseURL: "https://iris-arduino-v1-default-rtdb.firebaseio.com", 
+  projectId: "iris-arduino-v1", 
+  storageBucket: "iris-arduino-v1.appspot.com", 
+  messagingSenderId: "595772047177", 
+  appId: "1:595772047177:web:d5877d41705cff1affe498", 
+  measurementId: "G-WPC6SJY6TJ" 
+};
 
 const firebaseApp = initializeApp(firebaseConfig);
 const database = getDatabase(firebaseApp);

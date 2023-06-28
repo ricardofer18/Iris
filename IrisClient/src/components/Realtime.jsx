@@ -1,38 +1,39 @@
-import { useEffect, useState } from "react";
-import { ref, onValue, off } from "firebase/database";
-import database from "../firebase.js";
+import { useEffect, useState } from "react"
+import { ref, onValue, off } from "firebase/database"
+import database from "../firebase.js"
+import Card from "./Card"
 
 const Realtime = () => {
-  const [data, setData] = useState(null);
+  const [humedad, setHumedad] = useState(null)
+  const [temperatura, setTemperatura] = useState(null)
 
   useEffect(() => {
-    const dataRef = ref(database, "Vertientes/Vertiente1");
+    const dataRef = ref(database, "/Datos")
 
     const handleDataChange = (snapshot) => {
-      const newData = snapshot.val();
-      setData(newData);
+      const newData = snapshot.val()
+      const { humedad, temperatura } = newData
+      setHumedad(humedad)
+      setTemperatura(temperatura)
       console.log(newData)
-    };
+    }
 
-    onValue(dataRef, handleDataChange);
+    onValue(dataRef, handleDataChange)
 
     return () => {
-      off(dataRef, "value", handleDataChange);
-    };
-  }, []);
+      off(dataRef, "value", handleDataChange)
+    }
+  }, [])
 
   return (
-    <div>
-      {data &&
-        Object.keys(data).map((key) => (
-          <div key={key}>
-            <span>{key}: </span>
-            <span>{JSON.stringify(data[key])}</span>
-          </div>
-        ))}
-    </div>
-  );
-};
+    <>
+      <Card nombre={temperatura}></Card>
+      <Card nombre={temperatura}></Card>
+      <Card nombre={temperatura}></Card>
+      <Card nombre={temperatura}></Card>
+      <Card nombre={temperatura}></Card>
+    </>
+  )
+}
 
-export default Realtime;
-
+export default Realtime
