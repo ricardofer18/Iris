@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "admin",
-    "password": "Agrosuper#",
-    "database": "agrosuper",
-    "host": "18.223.170.119",
+    "username": "u4041_yfPuOE7DX2",
+    "password": "e!ajJo.98IvN6f@h6Xxkedrz",
+    "database": "s4041_agrosuper",
+    "host": "149.56.28.89",
     "dialect": "mysql"
   }
 }
